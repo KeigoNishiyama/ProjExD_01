@@ -19,7 +19,7 @@ def main():
         
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img, [1600-x, 0])
-        screen.blit(kouka_img_lis[tmr%2], [300, 200])
+        screen.blit(kouka_img_lis[tmr//20%2], [300, 200])
         pg.display.update()
         tmr += 1        
         clock.tick(100)
